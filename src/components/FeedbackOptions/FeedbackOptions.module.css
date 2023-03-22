@@ -1,0 +1,21 @@
+.feed {
+  display: flex;
+  gap: 10px;
+}
+.feed__button {
+  height: 40px;
+  width: 80px;
+  border: none;
+  background-color: rgb(255, 140, 0);
+  border-radius: 6%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+  transition: all 0.5s;
+}
+.feed__button:hover {
+  cursor: pointer;
+  background-color: rgb(141, 141, 141);
+  transition: all 0.5s;
+}
