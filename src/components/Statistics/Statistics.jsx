@@ -9,7 +9,7 @@ export const Statistics = ({
 }) => {
   return (
     <section className={css.section}>
-      <h2 className={css.title}>Statistics:</h2>
+      <h2 className={css.title}>Statistics</h2>
       <ul>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
