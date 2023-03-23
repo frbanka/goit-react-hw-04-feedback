@@ -44,7 +44,7 @@ export default class App extends Component {
             positivePercentage={goodFeebackPercentage}
           />
         ) : (
-          <Notification message="There is no feedback" />
+          <Notification message="There is no feedback yet" />
         )}
       </Section>
     );
