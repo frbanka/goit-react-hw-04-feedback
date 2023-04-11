@@ -50,3 +50,4 @@ function App() {
     </Section>
   );
 }
+export default App;
