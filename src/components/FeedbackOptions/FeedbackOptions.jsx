@@ -2,26 +2,25 @@ import { PropTypes } from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const opsArray = Object.keys(options);
   return (
     <div className={css.feed}>
-      {opsArray.map(a => {
-        return (
+      {options.map(option => (
+        <div>
           <button
             className={css.feed__button}
-            key={a}
+            key={option}
             type="button"
-            name={a}
-            onClick={onLeaveFeedback}
+            name={option}
+            onClick={() => onLeaveFeedback(option)}
           >
-            {a === 'good' ? 'good' : a === 'neutral' ? 'neutral' : 'bad'}
+            {option}
           </button>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 };
 FeedbackOptions.propTypes = {
-  options: PropTypes.object.isRequired,
+  options: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
